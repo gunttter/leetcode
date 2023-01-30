@@ -1,8 +1,8 @@
 import { isPalindrome } from "./main";
 
-test("Deletes non-alphanumeric characters and convert everything to lowercase.Then split string into an ordered list of substrings, reverse list and join them in one string.", () => {
+test("Basic input example", () => {
   expect(isPalindrome("race a car")).toBe(false);
 });
-test("Deletes non-alphanumeric characters and convert everything to lowercase.Then split string into an ordered list of substrings, reverse list and join them in one string.", () => {
-  expect(isPalindrome("asfjfsa")).toBe(true);
+test("Example with numbers and non-alphanumeric characters", () => {
+  expect(isPalindrome("01asfj ,;, jfsa10")).toBe(true);
 });
